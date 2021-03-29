@@ -1,0 +1,14 @@
+# main ignoring files for production. not important for webhosting.
+*.psd
+*.ai
+*.db
+# other marked files
+*.private.*
+*.afdesign
+
+# ignore old files
+*.old.*
+_old
+
+#temp ignore ffxiv folder
+ffxiv
