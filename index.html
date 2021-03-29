@@ -2,8 +2,7 @@
 <html lang="en">
 <head>
 
-  <meta http-equiv="content-type" content="text/html; charset=utf-8">
-
+  <meta charset="utf-8">
   <title>COMMISSIONS • automaticspirit (ILLLUSTRATION AND DESIGN)</title>
 
   <link rel="preconnect" href="https://fonts.gstatic.com">
@@ -435,27 +434,27 @@
         <h2>Commission Form</h2>
         <div id="cform">
           <form action="https://formspree.io/f/xeqvjvov" method="post">
-            <input class="f-email" type="email" name="_replyto" placeholder="Your@contact.email" required></input><br>
-            <select name = "greet">
+            <input aria-label="email_address" class="f-email" type="email" name="_replyto" placeholder="Your@contact.email" required></input><br>
+            <select aria-label="salutation" name = "greet">
               <option value="Hello" selected>Hello</option>
               <option value="Greetings">Greetings</option>
               <option value="Henlo">Henlo</option>
             </select>
              Auto! I am looking to commission your art !<br>
             I am interested in
-            <select name = "commtype">
+            <select aria-label="commission_type" name = "commtype">
               <option value="headshot" selected>the headshot template</option>
               <option value="fullcolor">the full color template</option>
               <option value="twitch/commercial">Twitch/Commercial art</option>
               <option value="specific">particular services</option>
             </select><br>
-            <textarea class="message" name="message" placeholder="Here are the details... (feel free to link refs here)" required></textarea>
-            <select name="regards">
+            <textarea aria-label="message" class="message" name="message" placeholder="Here are the details... (feel free to link refs here)" required></textarea>
+            <select aria-label="consideration" name="regards">
               <option value="sincerely">Sincerely</option>
               <option value="respectfully">Respectfully</option>
               <option value="regards">Regards</option>
             </select> ,<br>
-            <input class="f-moniker" type="text" name="moniker" placeholder="twitter or discord ID" contenteditable required></input>
+            <input aria-label="user_name" class="f-moniker" type="text" name="moniker" placeholder="twitter or discord ID" contenteditable required></input>
             <button type="submit">Send</button>
           </form>
         </div>
