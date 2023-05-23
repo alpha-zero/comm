@@ -1,488 +1,178 @@
-<!DOCTYPE html>
-<html lang="en">
+<!doctype html>
+<html>
 <head>
+    <meta charset="utf-8">
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+    
+    <meta name="description" content="automaticspirit's commission page." />
+    <title>COMMISSIONS automaticspirit (ILLLUSTRATION AND DESIGN)</title>
 
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=M+PLUS+Rounded+1c:wght@300;400;700&family=Raleway:ital,wght@0,900;1,700;1,900&display=swap" rel="stylesheet">
 
-  <meta charset="utf-8">
-  <meta name="language" content="en">
-  <meta name="description" content="automaticspirit's commission page." />
-  <title>COMMISSIONS • automaticspirit (ILLLUSTRATION AND DESIGN)</title>
-
-  <link rel="preconnect" href="https://fonts.gstatic.com">
-  <link href="https://fonts.googleapis.com/css2?family=Dosis&family=Raleway:wght@700;900&display=swap" rel="stylesheet">
-
-  <style type="text/css">
-    :root{
-
-    }
-
-    html {}
-    body {margin: 0;}
-    h1,h2,h3,h4,h5,h6 {}
-    h1,h2,h3 { font-family: 'Raleway', sans-serif; overflow-wrap: break-word; margin: 0;}
-    p,figure {margin: 0;}
-    a { text-decoration: none;}
-    a, a:visited { color: var(--primary-color)}
-
-    body, select { font-family: 'Dosis', sans-serif; }
-    body {
-      background-image: url('images/prj-bg.png');
-      background-repeat: repeat;
-      background-color: var(--bg-color);
-      background-attachment: fixed;
-      color: var(--primary-color);
-
-      transition: color .5s, background-color .5s;
-    }
-
-    nav {
-      /* position:fixed; width: 100vw; */
-      top: 0;
-      display:flex;
-      flex-wrap: nowrap;
-      justify-content: center;
-      font-size: .75em;
-    }
-    nav a {
-      border-top: 4px solid var(--primary-color);
-      flex-grow: 1;
-      padding: 0 0 4px;
-      text-transform: uppercase;
-      text-align: center;
-      text-decoration: none;
-      background-color: var(--primary-color);
-      transition: .2s all;
-    }
-    nav a, nav a:visited {
-    color: var(--bg-color);}
-    nav a::before {content:"/"}
-    nav:hover a, nav a:focus { padding: 2px 0 6px; }
-    nav a:hover, nav a:focus {
-      background-color: #dcdcc800;
-      color: var(--primary-color);
-      font-size: 1em;
-    }
-
-    section { margin-bottom:1em; display: flex; flex-direction: column;}
-    section>figure { }
-
-    #content {
-      /* background-color: rgba(200,0,0,.1); */
-      margin: 1em 1em 0; top: 2em;
-    }
-
-    .corners {
-      position: relative;
-      padding: 8px;
-      min-height:64px;
-      /* backdrop-filter: blur(2px); */
-      /* box-shadow: 0 0 32px rgb(0 0 0 / 0.05); */
-    }
-    .corners:before, .corners:after, .corners>:first-child:before, .corners>:first-child:after {
-      position:absolute;
-      width:16px; height: 16px;
-      border-color: var(--primary-color); /* or whatever colour */
-      border-style: solid; /* or whatever style */
-      content: '';
-    }
-    .corners:before {top:0;left:0;border-width: 1px 0 0 1px}
-    .corners:after {top:0;right:0;border-width: 1px 1px 0 0}
-    .corners>:first-child:before {bottom:0;right:0;border-width: 0 1px 1px 0}
-    .corners>:first-child:after {bottom:0;left:0;border-width: 0 0 1px 1px}
-    .corners h1 {margin:0;}
-
-    header {}
-    header>h1 {color: var(--primary-color); font-size:5em; font-weight: 900; text-transform: uppercase; }
-
-    .ext-links-sprite {
-      margin-top: .5rem;
-      opacity: .8;
-      display: flex;
-      justify-content: center;
-    }
-    .ext-links-sprite>a {
-      display: block;
-      width: 30px; height: 30px;
-      background-size: 60px;
-      background-image: url(images/prj-sprite.png);
-      opacity: 1;
-      transition: background-position .2s;
-
-      border-left-color: var(--primary-color);
-      border-left-style: solid;
-      border-left-width: 1px;
-    }
-    .ext-links-sprite>a:last-child {
-      border-right-color: var(--primary-color);
-      border-right-style: solid;
-      border-right-width: 1px;}
-    .ext-links-sprite>a:hover {}
-    .arts:hover, .arts:focus {background-position:0 -30px;}
-    .twit {background-position: 0px -60px;}
-    .twit:hover, .twit:focus {background-position: 0px -90px;}
-    .twtc {background-position: -30px -120px;}
-    .twtc:hover, .twtc:focus {background-position: -30px -150px;}
-    .insta {background-position: 0px -120px;}
-    .insta:hover, .insta:focus {background-position: 0px -150px;}
-
-    figure {margin: .5em;}
-    /* #templates>figure {opacity:.75; transition: .8s opacity}
-    #templates>figure:hover, #templates>figure:focus {opacity:1; transition: .2s opacity;} */
-    #templates>figure img {width: 100%;}
-    #templates {margin: 0 -.5em;}
-
-    #terms h2, #contact h2 {
-      margin: -8px 0 8px -8px;
-      padding: 0 8px;
-      width: calc(100%);
-      display: block;
-      background-color: var(--primary-color);
-      color: var(--bg-color);
-      font-size:1.2rem;
-      text-transform: uppercase;
-    }
-    #terms summary {
-      text-transform: uppercase;
-      padding: 0 .5rem;
-      background-color: var(--primary-color);
-      transition: .75s background-color;
-    }
-    #terms summary, summary::marker { color: var(--bg-color); }
-    #terms summary:hover, #terms summary:focus {
-      background-color: var(--accent-color);
-      transition: .1s background-color;
-    }
-    summary:hover::marker { color: var(--bg-color); }
-
-    #templates figure.corners:after {
-      height: auto; width: auto;
-      padding: 4px 4px;
-      background-color: var(--primary-color);
-      font-family: 'Raleway', sans-serif; font-weight: 700;
-      text-transform: uppercase;
-      content:'template';
-      color: var(--bg-color);
-      font-size: .8em;
-    }
-
-    div#tos {
-      width: 100%;
-      column-count: 1;
-      column-gap:.5rem;
-    }
-    ::marker {color: var(--primary-color)}
-    #tos ul { margin: 0; }
-
-    section#templates {}
-
-    #templates figure {display: flex; flex-direction:column; align-items: center;}
-    figure>img, figure figcaption {}
-    figure img {width: 100%;}
-    figure figcaption {
-      order: -01;
-      position: absolute;
-      display: flex;
-      height: calc(100% - 1em);
-      justify-content: center; flex-direction: column; align-items: center;
-    }
-    figcaption>* {
-      margin:0;padding: 0px 4px;
-      color: var(--bg-color);
-    }
-    figcaption h1, figcaption li { background-color: var(--primary-color); }
-    figcaption>ul {
-      list-style: none;
-      text-align: center;
-      display: flex;
-      flex-wrap: wrap;
-      justify-content: center;
-    }
-    figcaption li { margin: 0; padding: 0 4px; display:inline-block; }
-    figcaption li:not(:first-child):before {content:"∙ ";}
-    figcaption h1 {
-      font-size: 2em; text-transform: uppercase;
-      margin-block-start: 0; margin-block-end: 0
-    }
-    figure .tprice {color: var(--accent-color)}
-    .tprice:before {color: var(--bg-color)}
-
-    #templates:hover figure {
-      opacity:.75;
-      transition: opacity .75s;
-    }
-    #templates figure:hover { opacity:1; transition: opacity .33s; }
-
-    #cform {
-      display: block;
-      padding: .5rem 1rem;
-      /* border:1px solid var(--primary-color); */
-    }
-    #cform ::placeholder {font-style:italic;}
-    #cform textarea, #cform input {
-      background-color: var(--primary-color);
-      border: 1px solid var(--primary-color);
-      border-radius: 0;
-      font-family: 'Dosis';
-      color: var(--bg-color);
-      font-size: 1rem;
-      resize: vertical;
-    }
-    #cform input.f-email { margin-bottom: .5em; width: 75% }
-    #cform select {
-      border:none; border-radius: 0;
-      color: var(--bg-color);
-      font-size: 1rem;
-      text-align-last: center;
-      background-color: var(--primary-color)
-    }
-    #cform option {}
-    #cform textarea.message {
-      margin-top: .5em; margin-bottom:1rem;
-      width: calc(100% - 6px); min-height: 3rem; max-height: 10rem;
-    }
-    #cform .f-moniker { margin-top: .25rem; width: 50%; resize:horizontal;}
-    #cform button {
-      margin: 1rem auto 0; padding: .1em .5em;
-      display: block;
-      border-radius: 0;
-      background-color: var(--primary-color);
-      border: 1px solid var(--primary-color);
-      font-family: 'Dosis';
-      font-size: 1rem;
-      text-transform: uppercase;
-      color: var(--bg-color);
-      transition: all 1s;
-    }
-    #cform button:hover {
-      padding-left: 1rem; padding-right: 1rem;
-      background-color: var(--accent-color);
-      border-color: var(--accent-color);
-      transition: all .2s;
-    }
-
-    #contactcard {
-      display:flex;
-      flex-wrap:wrap;
-      margin-top: .5em;
-      justify-content: center;
-    }
-    #contactcard a {
-      display: block;
-      width: 128px; height:128px;
-      background-size: auto 256px;
-      background-image: url(images/contactcard.png);
-      background-repeat: no-repeat;
-      transition: opacity .75s;
-    }
-    #contactcard a:hover {transition: opacity .2s;}
-    #contactcard:hover a {opacity: .5;}
-    #contactcard a:hover { opacity: 1;}
-    #contactcard .cc-email {}
-    #contactcard .cc-twitter { background-position: -128px 0; }
-    #contactcard .cc-discord { background-position: -256px 0; }
-
-    footer {
-      border-top: 1px solid var(--primary-color);
-      margin-top: 1em; margin-bottom:.5em; padding: .5em 0;
-      display: flex; justify-content:space-between;
-    }
-    footer>a {padding: 0 4px; display: inline-block; font-size: .75em; text-align: center; text-transform: uppercase; }
-    footer>a:first-child {padding-left: 0;} footer>a:last-child {padding-right: 0;}
-    footer>a:hover, footer>a:focus {background-color: var(--primary-color); color: var(--bg-color)}
-
-    @media ( min-width: 740px ) {
-      div#tos {column-count:2;}
-    }
-
-    @media ( min-width: 880px ) {
-      section#templates {
-        flex-direction: row;
-        flex-wrap: wrap;
-      }
-      #templates>figure {
-        width: calc(50% - 2em);
-      }
-    }
-
-    @media ( min-width: 1080px ) {
-      section#contact {
-        flex-direction:row;
-      }
-      #contact>figure:first-child {width: 75%;}
-    }
-
-    @media (prefers-color-scheme: light) {
-      :root {
-        --primary-color: #3e3e3a;
-        --accent-color: #d75353;
-        --bg-color: #dcdcc8;
-      }
-    }
-    @media (prefers-color-scheme: dark) {
-      :root {
-        --primary-color: #dcdcc8;
-        --accent-color: #d75353;
-        --bg-color: #3e3e3a;
-      }
-      .ext-links-sprite>a {background-image: url(images/prj-sprite-invert.png)}
-      #contactcard .cc-email {background-position: 0 -128px;}
-      #contactcard .cc-twitter { background-position: -128px -128px; }
-      #contactcard .cc-discord { background-position: -256px -128px; }
-    }
-  </style>
+    <link rel="stylesheet" href="style.css?v=1.0">
+    <style>
+        .notification {margin-top:4em; margin-bottom:4em;}
+    </style>
 </head>
 <body>
-  <nav>
-    <a href="http://automaticspirit.com"  title="_HOME">Home</a>
-    <a href="http://automaticspirit.com/projects.html" title="_PROJECTS">Projects</a>
-    <a href="http://automaticspirit.com/contact.html" title="_CONTACT">Contact</a>
-  </nav>
-  <div id='content'>
-    <header class="corners"><h1>Commissions</h1></header>
-    <section id="terms" style="margin: .5em -.5em;;"> <!-- ToS -->
-      <figure class="corners">
-        <p>Welcome to my commissions page.<br>Here you'll find my (automaticspirit's) basic information for my commissions. If you require more information feel free to start a conversation_</p>
-      </figure>
-      <figure class="corners">
-        <h2>Service information</h2>
-        <div id="tos">
-          <details open>
-            <summary>General</summary>
-            <!-- will dos won't dos personal use etc, negotiability -->
-            <ul>
-              <li>In order to use me to the best of my ability and keep your vision of the final work, please provide as much information as you can.</li>
-              <li>I reserve the right to decline any requests.</li>
-              <li>Upon requests, final pieces can be made with transparent backgrounds.</li>
-              <li>There is a markup on commercial pieces. If you wish to use a previously commissioned work for print or distribution, you must discuss this with me.</li>
-              <li>The timeframe to completion (depending on correspondence and complexity) can range from one week to six.</li>
-              <li>If you wish to provide a deadline of work, there may be a rush fee.</li>
-            </ul>
-          </details>
-          <details open>
-            <summary>Process</summary>
-            <!-- talk about wait time, payment, invoicing, detailing, redoing details -->
-            <ul>
-              <li>Upon starting correspondence with me, once we agree on the idea of work I will send an invoice.</li>
-              <li>I ask for payment before any work has been started. On works over 60USD I offer sketch deposits.</li>
-              <li>After revised sketches and have been paid in full, I begin work on the final piece(s).</li>
-              <li>You may be shown work-in-progress snapshots and are free to revise. Depending on the complexity of revisions, you may be billed.</li>
-            </ul>
-          </details>
-          <details open>
-            <summary>Payment</summary>
-            <!-- base fees, extra fees, currency, paypal -->
-            <ul>
-              <li>My invoices are done through Paypal or if you're located in New Zealand, you can ask for other ways.</li>
-              <li>Payments are calculated in USD.</li>
-              <li>All payments must be made up front. I do not ask for sketch deposits on pieces under 60USD.</li>
-              <li>You may not request refunds once I've started work.</li>
-            </ul>
-          </details>
-          <details open>
-            <summary>Usage & Sharing</summary>
-            <!--  -->
-            <ul>
-              <li>You may not resell commissioned pieces of work. </li>
-              <li>You cannot modify the image without permission. I do not permit the cropping of my logos or signatures (You may request the placement of these).</li>
-              <li>I reserve the right to share commissioned pieces of work on my own social media or for portfolio pieces.</li>
-            </ul>
-          </details>
-        </div>
-      </figure>
-      <figure class="corners">
-        <h2>Templates</h2>
-        <p>Listed below are general pricing templates. They are not the full range of works I can provide, feel free to ask about what I can do for you. Pricing may be different depending complexity of work_ <br>
-          If you wish to see further examples — or even more recent examples of my art — consider my social profiles :</p>
-        <div class="ext-links-sprite">
-          <a class="arts" href="https://www.artstation.com/automaticspirit" title="Nagivate to ArtStation_"></a>
-          <a class="twit" href="https://twitter.com/azezaroo" title="Move to Twitter_"></a>
-          <a class="twtc" href="https://twitch.tv/automaticspirit" title="Nagivate to Twitch_"></a>
-          <a class="insta" href="https://instagram.com/automaticspirit" title="Proceed to Instagram_"></a>
-        </div>
-      </figure>
-    </section>
-    <section id="templates"> <!-- Samples -->
-      <figure class="corners">
-        <div></div>
-        <img src="images/streamassets-prv.jpg">
-        <figcaption>
-          <h1>Streaming Assets</h1>
-          <ul>
-            <li>Still emote [512px max] <span class="tprice">$35USD/p</span></li>
-            <li>Twitch panels <span class="tprice">$35USD/p</span></li>
-            <li>Commercial prices</li>
-          </ul>
-        </figcaption>
-      </figure>
-      <figure class="corners">
-        <div></div>
-        <img src="images/headshot-prv.jpg">
-        <figcaption>
-          <h1>Headshots</h1>
-          <ul>
-            <li>1:1 (square artboard)</li>
-            <li class="tprice">$90USD</li>
-            <li>non-commercial</li>
-            <li>simple background</li>
-          </ul>
-        </figcaption>
-      </figure>
-      <figure class="corners">
-        <div></div>
-        <img src="images/fullcolor-prv.jpg">
-        <figcaption>
-          <h1>Full Color</h1>
-          <ul>
-            <li>2:1 (rectangle artboard)</li>
-            <li class="tprice">$180USD</li>
-            <li>non-commercial</li>
-          </ul>
-        </figcaption>
-    </section>
-    <section id="contact" style="margin: .5em -.5em;"> <!-- correspond -->
-      <figure class="corners">
-        <h2>Commission Form</h2>
-        <div id="cform">
-          <form action="https://formspree.io/f/xeqvjvov" method="post">
-            <input aria-label="email_address" class="f-email" type="email" name="_replyto" placeholder="Your@contact.email" required></input><br>
-            <select aria-label="salutation" name = "greet">
-              <option value="Hello" selected>Hello</option>
-              <option value="Greetings">Greetings</option>
-              <option value="Henlo">Henlo</option>
-            </select>
-             Auto! I am looking to commission your art !<br>
-            I am interested in
-            <select aria-label="commission_type" name = "commtype">
-              <option value="headshot" selected>the headshot template</option>
-              <option value="fullcolor">the full color template</option>
-              <option value="twitch/commercial">Twitch/Commercial art</option>
-              <option value="specific">particular services</option>
-            </select><br>
-            <textarea aria-label="message" class="message" name="message" placeholder="Here are the details... (feel free to link refs here)" required></textarea>
-            <select aria-label="consideration" name="regards">
-              <option value="sincerely">Sincerely</option>
-              <option value="respectfully">Respectfully</option>
-              <option value="regards">Regards</option>
-            </select> ,<br>
-            <input aria-label="user_name" class="f-moniker" type="text" name="moniker" placeholder="twitter or discord ID" contenteditable required></input>
-            <button type="submit">Send</button>
-          </form>
-        </div>
-      </figure>
-      <figure class="corners">
-        <h2>Contact</h2>
-        <p>Should you wish to start a correspondence with me by other means, try through these:</p>
-        <div id="contactcard">
-          <a class="cc-email" title="Email" href="mailto:automaticspirit@gmail.com?subject=Commission&body=Hi%2C%20auto%20!"></a>
-          <a class="cc-twitter" title="Twitter" href="http://twitter.com/azezaroo"></a>
-          <a class="cc-discord" title="Discord" href="http://discord.com/app"></a>
-        </div>
-      </figure>
-    </section>
-    <footer>
-      <a href="http://www.automaticspirit.com">automaticspirit</a>
-      <a href="#">TOP</a>
-    </footer>
-  </div>
+    <nav>
+        <a href="http://automaticspirit.com"  title="_HOME">Home</a>
+        <a href="http://automaticspirit.com/projects.html" title="_PROJECTS">Projects</a>
+        <a href="http://automaticspirit.com/contact.html" title="_CONTACT">Contact</a>
+    </nav>
+    <div id='content'>
+        <header class="corners"><h1>Commissions</h1></header>
+        <section id="terms" style="margin: .5em -.5em;;"> <!-- ToS -->
+        <figure class="corners">
+            <p>Welcome to my commissions page.<br>Here you'll find my (automaticspirit's) basic information for my commissions. If you require more information feel free to start a conversation_</p>
+            <div></div>
+        </figure>
+        <figure class="corners">
+            <h2>Service information</h2>
+            <div id="tos">
+                <details open>
+                    <summary>General</summary>
+                    <!-- will dos won't dos personal use etc, negotiability -->
+                    <ul>
+                        <li>In order to use me to the best of my ability and keep your vision of the final work, please provide as much information as you can.</li>
+                        <li>I reserve the right to decline any requests.</li>
+                        <li>Upon requests, final pieces can be made with transparent backgrounds.</li>
+                        <li>There is a markup on commercial pieces. If you wish to use a previously commissioned work for print or distribution, you must discuss this with me.</li>
+                        <li>The timeframe to completion (depending on correspondence and complexity) can range from one week to six.</li>
+                        <li>If you wish to provide a deadline of work, I may ask for a rush fee.</li>
+                    </ul>
+                </details>
+                <details open>
+                    <summary>Process</summary>
+                    <!-- talk about wait time, payment, invoicing, detailing, redoing details -->
+                    <ul>
+                        <li>Upon starting correspondence with me, once we agree on the idea of work I will send an invoice.</li>
+                        <li>I ask for payment before any work has been started. On works over 60USD I offer sketch deposits.</li>
+                        <li>After revised sketches and have been paid in full, I begin work on the final piece(s).</li>
+                        <li>You may be shown work-in-progress snapshots and are free to revise. Depending on the complexity of revisions, you may be billed.</li>
+                    </ul>
+                </details>
+                <details open>
+                    <summary>Payment</summary>
+                    <!-- base fees, extra fees, currency, paypal -->
+                    <ul>
+                        <li>My invoices are done through Paypal or if you're located in New Zealand, you can ask for other ways.</li>
+                        <li>Payments are calculated in USD.</li>
+                        <li>All payments must be made up front. I do not ask for sketch deposits on pieces under 60USD.</li>
+                        <li>You may not request refunds once I've started work.</li>
+                    </ul>
+                </details>
+                <details open>
+                    <summary>Usage &amp; Sharing</summary>
+                    <!--  -->
+                    <ul>
+                        <li>You may not resell commissioned pieces of work. </li>
+                        <li>You cannot modify the image without permission. I do not permit the cropping of my logos or signatures (You may request the placement of these).</li>
+                        <li>I reserve the right to share commissioned pieces of work on my own social media or for portfolio pieces.</li>
+                    </ul>
+                </details>
+            </div>
+        </figure>
+        <figure class="corners">
+            <h2>Templates</h2>
+            <p>Listed below are general pricing templates. They are not the full range of works I can provide, feel free to ask about what I can do for you. Pricing may be different depending complexity of work_ <br>
+            If you wish to see further examples — or even more recent examples of my art — consider my social profiles :</p>
+            <div class="ext-links-sprite">
+                <a class="arts" href="https://www.artstation.com/automaticspirit" title="Nagivate to ArtStation_"></a>
+                <a class="twit" href="https://twitter.com/azezaroo" title="Move to Twitter_"></a>
+                <a class="twtc" href="https://twitch.tv/automaticspirit" title="Nagivate to Twitch_"></a>
+                <a class="insta" href="https://instagram.com/automaticspirit" title="Proceed to Instagram_"></a>
+            </div>
+        </figure>
+        </section>
+        <section id="templates"> <!-- Samples -->
+           <div class="notification">My templates/samples are currently being reworked, feel free to look through my social gallery and contact me using the form.</div>
+<!--
+            <figure class="corners">
+                <div></div>
+                <img src="images/streamassets-prv.jpg">
+                <figcaption>
+                    <h1>Streaming Assets</h1>
+                    <ul>
+                        <li>Still emote [512px max] <span class="tprice">$35USD/p</span></li>
+                        <li>Twitch panels <span class="tprice">$35USD/p</span></li>
+                        <li>Commercial prices</li>
+                    </ul>
+                </figcaption>
+            </figure>
+            <figure class="corners">
+                <div></div>
+                <img src="images/headshot-prv.jpg">
+                <figcaption>
+                    <h1>Headshots</h1>
+                    <ul>
+                        <li>1:1 (square artboard)</li>
+                        <li class="tprice">$90USD</li>
+                        <li>non-commercial</li>
+                        <li>simple background</li>
+                    </ul>
+                </figcaption>
+            </figure>
+            <figure class="corners">
+            <div></div>
+                <img src="images/fullcolor-prv.jpg">
+                <figcaption>
+                    <h1>Full Color</h1>
+                    <ul>
+                        <li>2:1 (rectangle artboard)</li>
+                        <li class="tprice">$180USD</li>
+                        <li>non-commercial</li>
+                    </ul>
+                </figcaption>
+            </figure>
+-->
+        </section>
+        <section id="contact" style="margin: .5em -.5em;"> <!-- correspond -->
+            <figure class="corners">
+                <h2>Commission Form</h2>
+                <div id="cform">
+                    <form action="https://formspree.io/f/xeqvjvov" method="post">
+                        <input aria-label="email_address" class="f-email" type="email" name="_replyto" placeholder="Your@contact.email" required><br>
+                        <select aria-label="salutation" name = "greet">
+                            <option value="Hello" selected>Hello</option>
+                            <option value="Greetings">Greetings</option>
+                            <option value="Henlo">Henlo</option>
+                        </select>
+                        Auto! I am looking to request youre creative services !<br>
+                        I am interested in
+                        <select aria-label="commission_type" name = "commtype">
+                            <option value="headshot" selected>the headshot template</option>
+                            <option value="fullcolor">the full color template</option>
+                            <option value="twitch/commercial">Twitch/Commercial art</option>
+                            <option value="specific">particular services</option>
+                        </select> from you !<br>
+                        <textarea aria-label="message" class="message" name="message" placeholder="Here are the details... (feel free to link refs here)" required></textarea>
+                        <select aria-label="consideration" name="regards">
+                            <option value="sincerely">Sincerely</option>
+                            <option value="respectfully">Respectfully</option>
+                            <option value="regards">Regards</option>
+                        </select> ,<br>
+                        <input aria-label="user_name" class="f-moniker" type="text" name="moniker" placeholder="twitter or discord ID" contenteditable required>
+                        <button type="submit">Send</button>
+                    </form>
+                </div>
+            </figure>
+            <figure class="corners">
+                <h2>Contact</h2>
+                <p>Should you wish to start a correspondence with me by other means, try through these:</p>
+                <div id="contactcard">
+                    <a class="cc-email" title="Email" href="mailto:automaticspirit@gmail.com?subject=Commission&body=Hi%2C%20auto%20!"></a>
+                    <a class="cc-twitter" title="Twitter" href="http://twitter.com/azezaroo"></a>
+                    <a class="cc-discord" title="Discord" href="http://discord.com/app"></a>
+                </div>
+            </figure>
+        </section>
+        <footer>
+            <a href="http://www.automaticspirit.com">automaticspirit</a>
+            <a href="#">TOP</a>
+        </footer>
+    </div>
 </body>
-</html
+</html>

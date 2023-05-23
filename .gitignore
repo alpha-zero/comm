@@ -5,6 +5,8 @@
 # other marked files
 *.private.*
 *.afdesign
+*.blend
+*.blend*
 
 # ignore old files
 *.old.*
